@@ -1,0 +1,181 @@
+body {
+  font-family: 'Hind', Arial, sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  position: absolute;
+  width: 420px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.wrapper {
+  border: 1px solid #d7d7d7;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.social {
+  display: flex;
+  width: 420px;
+  background: linear-gradient(0deg, rgba(82,114,170,1) 0%, rgba(72,104,161,1) 100%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.social__text {
+  width: 180px;
+  margin-left: 30px;
+  padding: 12.5px 0;
+  font-size: 22px;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px rgba(0, 96, 146, 1);
+  cursor: default;
+}
+
+.social__list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.social__item {
+  list-style: none;
+}
+
+.social__item:hover {
+  background: linear-gradient(0deg, rgba(68,101,154,1) 0%, rgba(65,96,149,1) 100%);
+}
+
+.social__item:active {
+  background: linear-gradient(0deg, rgba(42,64,105,1) 0%, rgba(58,89,142,1) 100%);
+  opacity: 0.5;
+}
+
+.social__item:last-child:hover {
+  border-top-right-radius: 5px;
+}
+
+.social__link {
+  display: block;
+  width: 69px;
+  padding: 15.5px 0;
+  text-align: center;
+  border-left: 1px solid #3f5f95;
+}
+
+.social__icon {
+  vertical-align: middle;
+}
+
+.login {
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+
+.form {
+  display: flex;
+  flex-flow: column;
+  width: 360px;
+  margin: auto;
+}
+
+.form__email,
+.form__password {
+  padding-top: 16px;
+  padding-right: 70px;
+  padding-bottom: 16px;
+  padding-left: 23px;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px -10px rgba(0,0,0,0.75);
+  font-size: 18px;
+  color: #4e4e4e;
+  outline: none;
+  cursor: pointer;
+}
+
+.form__email:focus,
+.form__password:focus {
+  border: 1px solid #a7a7a7;
+  cursor: text;
+}
+
+.form__email:focus::placeholder,
+.form__password:focus::placeholder {
+  color: transparent;
+}
+
+.form__email::placeholder,
+.form__password::placeholder {
+  font-size: 18px;
+  color: #bbbbbb;
+}
+
+.form__email {
+  background: url(../img/email.png) no-repeat #f9f9f9 310px 16px;
+}
+
+.form__password {
+  margin-top: 21px;
+  background: url(../img/lock.png) no-repeat #f9f9f9 312px 10px;
+}
+
+.form__btn {
+  margin-top: 30px;
+  padding: 17px 0px;
+  background: linear-gradient(0deg, rgba(244,94,100,1) 0%, rgba(242,83,89,1) 100%);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background: linear-gradient(0deg, rgba(227,80,86,1) 0%, rgba(210,70,76,1) 100%);
+}
+
+.form__btn:hover .form__btn-text {
+  opacity: 0.8;
+}
+
+.form__btn:active {
+  background: linear-gradient(0deg, rgba(185,66,70,1) 0%, rgba(172,58,63,1) 100%);
+}
+
+.form__btn:active .form__btn-text {
+  opacity: 0.4;
+}
+
+.signup {
+  padding: 15.5px 0;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.signup__text {
+  font-weight: 500;
+  color: #a7a6a6;
+  cursor: default;
+}
+
+.signup__link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #f35b61;
+}
+
+.signup__link:hover {
+  color: rgba(227,80,86,1);
+  text-decoration: underline;
+}
+
+.signup__link:active {
+  color: rgba(185,66,70,1);
+  text-decoration: underline;
+}
